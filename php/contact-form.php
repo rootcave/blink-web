@@ -43,7 +43,7 @@
 	$email = $_POST['email'];
 	$message = $_POST['massage'];
 	$from = $email;
-	$to = 'info@themewagon.com';  // please change this email id
+	$to = 'heshamwebdeve@gmail.com';  // please change this email id
 	$subject = 'Contact Form : Boots4 - First Bootstrap 4 Website Template Ever In The World';
 	
 	$body = "From: $name\n E-Mail: $email\n Message:\n $message";

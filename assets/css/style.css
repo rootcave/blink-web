@@ -300,7 +300,7 @@ body {
 .menu img {
 
     width: 100% !important;
-    height: 100% !important;
+    height: auto !important;
 }
 
 .intro-content span.number {
@@ -320,7 +320,7 @@ body {
 }
 
 .social-media a {
-    color: #4b4b4b;
+    color: #000;
     text-decoration: none;
     outline: 0 none;
     padding: 0 10px;
@@ -1283,6 +1283,10 @@ input#cfsubmit:hover {
         margin-top: 20px;
     }
 
+    .menu > div > img {
+        top: -30%
+    }
+
     .close-btn {
         background: url(../img/close_sm.png);
     }
@@ -1296,5 +1300,28 @@ input#cfsubmit:hover {
     .footer .author {
         float: none;
         text-align: center;
+    }
+}
+
+.loader img {
+    position: absolute;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -15px;
+    animation-name: logo;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1s
+}
+
+@keyframes logo {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.5)
     }
 }
